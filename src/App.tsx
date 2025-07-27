@@ -5,14 +5,14 @@ import { Home } from './features/Home'
 import { Invite } from './features/Invite'
 function App() {
   return (
-   <div>
+   
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/invite' element={<Invite/>} />
     </Routes>
     </BrowserRouter>
-   </div>
+   
   )
 }
 

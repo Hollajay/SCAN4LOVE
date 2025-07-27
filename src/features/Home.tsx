@@ -4,10 +4,10 @@ import frameImg from "../assets/frame.png";
 
 export const Home = () => {
   return (
-    <div className="w-full h-screen bg-primary text-secondary p-1">
-      <div className="    top-0 w-full  h-screen flex flex-col items-center justify-center">
-        <div className="text-center">
-          
+  
+
+      <div className=" w-full h-screen overflow-x-hidden flex flex-col items-center justify-center bg-primary text-secondary">
+        <div className="text-center    ">       
           <h1 className="text-2xl font-caveat">Conjugal Bliss</h1>
           <div className="relative flex w-full items-center justify-center">
             <div className="w-full ">
@@ -23,14 +23,11 @@ export const Home = () => {
               </p>
             </div>
           </div>
-
           <h1 className="font-caveat text-xl">
             Request the honor of your presence at their wedding
           </h1>
           <p className="font-spicy">Saturday 26th of October 2029</p>
         </div>
-
-        {/* <BulbStyle/> */}
         <div className=" p-4 rounded-xl md:w-2/5 w-full text-center flex flex-col items-center justify-center gap relative">
           <div className="light"></div>
           <p className="text-xl font-caveat"> Dear Sir / Madam </p>
@@ -41,7 +38,6 @@ export const Home = () => {
             <CustomButton />
           </div>
         </div>
-      </div>
-    </div>
+      </div> 
   );
 };
