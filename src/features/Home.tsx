@@ -4,7 +4,6 @@ import frameImg from "../assets/frame.png";
 
 export const Home = () => {
   return (
-  
 
       <div className=" w-full h-screen overflow-x-hidden flex flex-col items-center justify-center bg-primary text-secondary">
         <div className="text-center    ">       
@@ -14,11 +13,11 @@ export const Home = () => {
               <img className="h-96 w-full" src={frameImg} alt="frame" />
             </div>
             <div className="absolute  py-4 flex flex-col items-center justify-center gap-4">
-              <p className="md:text-6xl text-4xl font-dancing">
+              <p className=" text-4xl font-dancing">
                 Ologunagba Olajide{" "}
               </p>
               <Icon type="ring" />
-              <p className="md:text-6xl text-4xl font-dancing">
+              <p className=" text-4xl font-dancing">
                 Abidakun Alice
               </p>
             </div>

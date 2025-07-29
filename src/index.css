@@ -15,12 +15,6 @@
   --color-outline: #DEB3AD;
 }
 
-
-/* *{
-    margin: 0;
-    padding: 0;
-} */
-
 .guest-name::after{
   content: "";
   display: block;
