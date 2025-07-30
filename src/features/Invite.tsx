@@ -4,6 +4,9 @@ import { Container } from "../component/Container";
 import Icon from "../assets/Icon/Icon";
 import { venueProps } from "../component/dataProps";
 import { Button } from "../component/button/Button";
+import Countdown from "../component/Countdown";
+import { About } from "../pages/About";
+import { Gallery } from "../pages/Gallery";
 
 export const Invite = () => {
   return (
@@ -45,6 +48,8 @@ export const Invite = () => {
     </p>
   </div>
 </div>
+
+<Countdown targetDate="2025-10-20T14:00:00" />
 
 
           <div className="w-[80%] mx-auto relative">
@@ -107,8 +112,15 @@ export const Invite = () => {
               </div>
             </div>
           </div>
+          <About/>
+          <Gallery/>
+          <div>
+
+
+          </div>     
         </div>
       </Container>
     </div>
   );
 };
+
