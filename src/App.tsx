@@ -1,17 +1,17 @@
 import './App.css'
 
-import {BrowserRouter, Route,Routes} from 'react-router-dom'
+import {HashRouter as Router , Route,Routes} from 'react-router-dom'
 import { Home } from './features/Home'
 import { Invite } from './features/Invite'
 function App() {
   return (
    
-    <BrowserRouter>
+    <Router>
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/invite' element={<Invite/>} />
     </Routes>
-    </BrowserRouter>
+    </Router>
    
   )
 }
