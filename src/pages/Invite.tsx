@@ -5,8 +5,9 @@ import Icon from "../assets/Icon/Icon";
 import { venueProps } from "../component/dataProps";
 import { Button } from "../component/button/Button";
 import Countdown from "../component/Countdown";
-import { About } from "../pages/About";
-import { Gallery } from "../pages/Gallery";
+import { About } from "./About";
+import { Gallery } from "./Gallery";
+import { WishesSlider } from "../component/WishesSlider";
 
 export const Invite = () => {
   return (
@@ -27,30 +28,40 @@ export const Invite = () => {
           </div>
 
           <div className="w-[90%] mx-auto rounded-xl p-6 text-white bg-gradient-to-b from-tertiary to-secondary ">
-  <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
-    <h1 className="text-4xl md:text-5xl font-satisfy tracking-wide">
-      Wedding Invitation
-    </h1>
+            <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
+              <h1 className="text-4xl md:text-5xl font-satisfy tracking-wide">
+                Wedding Invitation
+              </h1>
 
-    <p className="text-xl font-satisfy leading-relaxed">
-      The family of <strong>Elder Ologunagba Ade and Deaconess D.K. Ologunagba</strong>,<br />
-      together with the family of <strong> Late Mr. Abidakun and Mrs. E.A. Abidakun</strong>,<br />
-      joyfully request the honour of your presence<br />
-      at the wedding celebration of their beloved children:
-    </p>
+              <p className="text-xl font-satisfy leading-relaxed">
+                The family of{" "}
+                <strong>
+                  Elder Ologunagba Ade and Deaconess D.K. Ologunagba
+                </strong>
+                ,<br />
+                together with the family of{" "}
+                <strong> Late Mr. Abidakun and Mrs. E.A. Abidakun</strong>,
+                <br />
+                joyfully request the honour of your presence
+                <br />
+                at the wedding celebration of their beloved children:
+              </p>
 
-    <h2 className="text-3xl font-satisfy mt-2">Ologunagba Olajide <br />& <br /> Abidakun Alice</h2>
+              <h2 className="text-3xl font-satisfy mt-2">
+                Ologunagba Olajide <br />& <br /> Abidakun Alice
+              </h2>
 
-    <p className="text-xl font-satisfy leading-relaxed">
-      as they unite in holy matrimony.<br />
-      Join us as we celebrate love, faith, and<br />
-      the beginning of a beautiful journey together.
-    </p>
-  </div>
-</div>
+              <p className="text-xl font-satisfy leading-relaxed">
+                as they unite in holy matrimony.
+                <br />
+                Join us as we celebrate love, faith, and
+                <br />
+                the beginning of a beautiful journey together.
+              </p>
+            </div>
+          </div>
 
-<Countdown targetDate="2025-10-20T14:00:00" />
-
+          <Countdown targetDate="2025-10-20T14:00:00" />
 
           <div className="w-[80%] mx-auto relative">
             <div className="absolute top-[-40px] left-[16%]">
@@ -112,15 +123,12 @@ export const Invite = () => {
               </div>
             </div>
           </div>
-          <About/>
-          <Gallery/>
-          <div>
-
-
-          </div>     
+          <About />
+          <WishesSlider/>
+          <Gallery />
+          <div></div>
         </div>
       </Container>
     </div>
   );
 };
-

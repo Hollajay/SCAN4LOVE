@@ -1,19 +1,17 @@
-import './App.css'
+import "./App.css";
 
-import {HashRouter as Router , Route,Routes} from 'react-router-dom'
-import { Home } from './features/Home'
-import { Invite } from './features/Invite'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Invite } from "./pages/Invite";
 function App() {
   return (
-   
     <Router>
-    <Routes>
-      <Route path='/' element={<Home/>} />
-      <Route path='/invite' element={<Invite/>} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/invite" element={<Invite />} />
+      </Routes>
     </Router>
-   
-  )
+  );
 }
 
-export default App
+export default App;
